@@ -1,0 +1,252 @@
+.sectionHome{
+    height: calc(100vh - 5rem);
+    position:absolute;
+    top: 5rem;
+    width: 100vw;
+    background-color : #3AAFA9;
+}
+.row{
+    display:flex;
+    flex-direction: row;
+    height: 100%;
+}
+.column {
+    background-color : #3AAFA9;
+  }
+  
+  .left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3vh 1vw 4vh 4vw ;
+    background-color : #3AAFA9;
+    animation-duration: 1s;    
+    animation-name: slidein;
+    transform: translateY(-5rem);
+  }
+  
+  .right {
+    width: 60%;
+    height: 100%;
+    position: relative;
+    animation-duration: 1.2s;    
+    animation-name: slideinSvg;
+    /* background-color : #3AAFA9; */
+    /* transform: translateY(5rem); */
+  }
+  
+  .line-1::after {
+    content: "\a";
+    white-space: pre;
+  }
+  
+  .title {
+    font-size: 58px;
+    align-items: center;
+    color: #17252A;
+    font-weight: bold;
+  }
+  
+  .title .bold {
+    color: #FEFFFF;
+    font-weight: bold;
+  }
+  
+  .description {
+    font-size: 28px;
+    color: #17252A;
+  }
+  .spanApp{
+    color : #2B7A79;
+  }
+  .homeRightsvgDiv{
+    height:100%;
+    width:100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .homeRightsvg{
+    height:100%;
+    width:100%;
+   
+  }
+  .SignUpandDashboardBtn{
+    width: fit-content;
+  }
+  @media screen and (max-width: 1560px) {
+    .left{
+      transform: translateY(0);
+    }
+    /* .right{
+      padding-top: 50px;
+    } */
+    .homeRightsvgDiv{
+      height:90%;
+      width:90%;
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    .row{
+      flex-direction: column;
+      /* height: calc(100vh - 5rem); */
+  }
+    .column {
+      width: 100%;
+    }
+    .left {
+      width: 100%;
+      height:40vh;
+      padding: 3vh 13vw 2vh 13vw;
+      display: block;
+    }
+    .right {
+      width: 100%;
+      height:60vh;
+      display: block;
+      display: flex;
+      justify-content: center;
+      animation-name:none;
+      /* height: auto; */
+      /* margin-bottom: 2vh; */
+      /* top: -50vh; */
+      /* padding-left: 10px; */
+      /* overflow:visible; */
+    }
+    .title {
+      font-size: 42px;
+    }
+    .description {
+      font-size: 22px;
+    }
+    .line-1::after {
+      content: "\a";
+      white-space: normal;
+    }
+    .homeRightsvgDiv{
+      height:100%;
+      width:100%;
+    }
+    .homeRightsvg{
+      height: 100%;
+      width:100%;
+      bottom: 0;
+      animation-name:none; 
+      margin: 0 auto;
+    }
+    .button{
+      width: fit-content;
+      padding: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 861px) {
+    .left {
+      top:1.5vh;
+      height: 50vh;
+    }
+    .right {
+      height: 50vh;
+    }
+    .title {
+      font-size: 36px;
+    }
+    .description {
+      font-size: 20px;
+    }
+    .line-1::after {
+      content: "\a";
+      white-space: normal;
+    }
+    .homeRightsvg{
+      height: 100%;
+    }
+  }
+  @media screen and (max-width: 700px) {
+  
+    /* .right {
+      height: 500px;
+    } */
+    .homeRightsvg{
+      /* width: 800px;
+      height: 600px; */
+      /* top:3vh; */
+      padding: 10px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+  
+    .left {
+      padding: 2vh 8vw 2vh 8vw;
+    }
+    .homeRightsvg{
+      /* width: 550px;
+      height: 425px; */
+      padding: 10px;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .left{
+      height: 50vh;
+    }
+    .right {
+      height:50vh;
+    }
+    .homeRightsvg{
+      /* width: 550px;
+      height: 425px; */
+      padding: 10px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 513px) {
+    .title {
+      font-size: 33px;
+    }
+    .description {
+      font-size: 19px;
+    }
+    .left {
+      top:1.5vh;
+      height: 50vh;
+      /* top:-100px; */
+    }
+    .line-1::after {
+      content: "\a";
+      white-space: normal;
+    }
+    .right {
+      height: 50vh;
+    }
+    .homeRightsvg{
+      /* width: 465px;
+      height: 375px; */
+      padding: 10px;
+    
+    }
+  }
+  @media screen and (max-width: 422px) {
+
+    .homeRightsvg{
+      padding: 12px;
+    }
+  }
+  @keyframes slidein {
+    from {
+      transform: translateY(-15rem);
+    }
+    to {
+      transform: translateY(-5rem);
+    }
+  }
+  @keyframes slideinSvg{
+    from {
+      transform: translateY(-15rem);
+    }
+    to {
+      transform: translateY(0rem);
+    }
+  }

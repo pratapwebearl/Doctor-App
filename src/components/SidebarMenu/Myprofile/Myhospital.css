@@ -1,0 +1,240 @@
+.dashboardComponentViewHospital{
+    padding : 0 ;
+    margin: 0;
+    box-sizing: border-box ;
+    right: 0;
+    min-height : calc(100vh - 5rem);
+    height: fit-content;
+    width: calc(100vw - 270px);
+    position: absolute;
+    top:5rem;
+    z-index: -1;
+    background: #DEF2F1;
+}
+.hospital-container{
+    margin: 5vh 10vw 5vh 10vw;
+    background-color: white;
+    width: auto;
+    position: relative;
+}
+
+.hospital-title{
+    font-weight: bold;
+    color: #17252A;
+    padding: 1rem;
+    background-color: #8CD9D5;
+    font-size: 1.4rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid #2B7A79;
+}
+.fa-hospital-info{
+    margin-right: 1rem;
+}
+.fa-clock-log{
+    margin-right:.5rem;
+}
+.hospitalinfo{
+    padding: 1vh 3vw 3.5vh 3vw;
+}
+.textareawidth{
+    font-size: .9rem;
+    min-width: 330px;
+    max-width: 330px;
+    max-height: 150px;
+    min-height: 150px;
+}
+.fa-map-marked-link{
+    margin: 0 10px;
+}
+.MapLink{
+    padding-left: 40px;
+    font-size: .85rem;
+    color: #808080;
+}
+.linkTag{
+    text-decoration: none;
+    color: #808080;
+}
+.image-item {
+    display: flex;
+    margin: 1rem 0;
+  }
+  .image-item__btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .image-view-hospital{
+      width: 65%;
+      /* max-height: 500px; */
+  }
+  .btn-hospital-images{
+    /* width: 125px; */
+    padding: 10px ;
+    min-width: 125px;
+	/* height: 40px; */
+	border-radius: 10px;
+	border: none;
+	background-image: linear-gradient(to right, #3AAFA9, #3AAFA9, #2B7A79);
+	background-size: 200%;
+	font-size: 1.1rem;
+	color: #FEFFFF;
+    margin: 1rem 1rem 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+  }
+.imageSaveBtnEnable{
+    width: 125px;
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+	background-image: linear-gradient(to right, #3AAFA9, #3AAFA9, #2B7A79);
+	background-size: 200%;
+	font-size: 1.1rem;
+	color: #FEFFFF;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+.imageSaveBtnDisable{
+    width: 125px;
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+	background: #cccccc;
+	background-size: 200%;
+	font-size: 1.1rem;
+	color: #FEFFFF;
+	margin: 1rem 0;
+	cursor: not-allowed;
+	transition: .5s;
+}
+.uploadMaxImageLine{
+    font-size: 1rem;
+    color: #808080;
+    margin-bottom: 20px;
+}
+.fa-upload-hospitalImage{
+    margin-right: .7rem;
+}
+.showLogMain{
+    margin:0 3vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.showLogMainHeading{
+    margin: 5px 3vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-bottom: 1px solid #2B7A79;
+}
+.inTime{
+    width: 50%;
+}
+.outTime{
+    width: 50%;
+}
+.logTime{
+    font-weight: 600;
+    font-size: 1rem;
+}
+.logTimeHeading{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin:5px 0;
+}
+.fa-sign-in-alt-log,.fa-sign-out-alt-log{
+    margin-right: .5rem;
+}
+.noLogSvgDiv{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 3vh;
+    flex-direction: column;
+}
+.noLogSvg{
+    max-width: 275px;
+    max-height: 200px;
+}
+.svgLabelLog{
+    color: #808080;
+    /* transform: translateY(-30px); */
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width:1100px){
+    .dashboardComponentViewHospital{
+        box-sizing: border-box ;
+        /* background-color : blue; */
+        min-height : calc(100vh - 5rem);
+        height: fit-content;
+        width: calc(100vw - 70px);
+        position: absolute;
+        top:5rem;
+        /* border : 10px solid black */
+    }
+    .btn-hospital-images{
+        /* width: 125px; */
+        padding: 10px ;
+        min-width: 125px;
+        /* height: 40px; */
+        font-size: .9rem;
+        /* margin: .4rem; */
+      }
+}
+@media screen and (max-width:620px){
+    .image-item {
+        display:block;
+        margin: 1rem 0;
+      }
+      .image-view-hospital{
+        width: 100%;
+    }
+      .image-item__btn-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content:left;
+        align-items: left;
+        border-bottom: 1px solid #dddddd;
+        margin-left: 0;
+      }
+      /* .btn-hospital-images{
+        margin: 1rem 1rem 1rem 0;
+      } */
+}
+@media screen and (max-width:550px){
+    .textareawidth{
+        width: 100%;
+        min-width: 100px;
+        max-height: 100px;
+        min-height: 100px;
+    }
+    .MapLink{
+       display: block;
+       padding: 10px 0;
+    }
+    .btn-hospital-images{
+        /* width: 125px; */
+        padding: 10px ;
+        /* height: 40px; */
+        font-size: .9rem;
+        margin: .5rem .5rem .5rem 0;
+      }
+}
+@media screen and (max-width:450px){
+      .image-item__btn-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content:left;
+        align-items: left;
+      }
+}

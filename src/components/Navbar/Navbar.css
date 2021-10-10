@@ -1,0 +1,207 @@
+.barAnimation{ 
+    animation-name: baranimation;
+    animation-duration: 1s;   
+}
+.linkAnimation {
+    animation-name: linkanimation;
+    animation-duration: 1s;
+}
+ .fa-caret-down {
+  margin-left: .5vw;
+}
+.fa-user-circle{
+  margin-left: .5vw;
+}
+.fa-user-md{
+  margin-right: .5vw;
+  font-size: larger;
+}
+.fa-sign-out-nav{
+  margin-right:  .5vw;
+}
+.fa-tachometer-alt-nav{
+  margin-left: .5vw;
+}
+.navDashboardLink{
+  text-decoration: none;
+  color: #FEFFFF; 
+}
+.toggle{
+  /* margin : auto .7vw; */
+  /* float: left; */
+  /* top: 50%; */
+  /* left: 50%; */
+  margin-left: .5vw;
+  transform: translateY(5px);
+}
+.NavProfileHeader{
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  display: none;
+}
+#NavProfile{
+  display: none;
+}
+.NavProfileDropdown{
+  cursor: pointer;
+  width: 100%;
+  z-index: 1;
+  font-size: 1.4rem;
+  color: #FEFFFF;
+  font-size:1.2rem;
+  font-weight: 550;
+  padding : 15px;
+  border-radius: 25px;
+  font-weight: 550;
+  padding : 8px 16px;
+  border-bottom: 1px solid transparent;
+  margin: 1vh 0; 
+}
+.NavProfileHeader :hover {
+  background-color: #3AAFA9;
+  /* border-bottom: 1px solid #DEF2F1; */
+}
+.NavProfileDropdown :hover {
+  background-color: #3AAFA9;
+}
+.hideSmall{
+  display: inline-block;
+}
+ .react-slidedown .pro-inner-list-item {
+  position: relative;
+  background-color: #3AAFA9;
+  background: #3AAFA9;
+}
+.subMenuSidebar{
+  position: relative;
+  background-color: #3AAFA9  !important;
+  background: #3AAFA9  !important;
+}
+.toggleViewSmall{
+  display: none;
+  font-size: 1.2rem;
+}
+.fa-caret-down-name{
+  display: none;
+}
+/* .togglebtn{
+    justify-self: end;
+    list-style-type: none;
+    margin: auto 0;
+    color: #FEFFFF;
+    background-color : #3AAFA9;
+    text-transform: uppercase;
+    border: 2px solid #2B7A79;
+    border-radius: 25px;
+    font-weight: 550;
+    padding : 8px 16px;
+    border-bottom: 1px solid transparent;
+    margin: 0 1.5rem;
+    transition: all 300ms linear 0s;
+    text-decoration: none;
+    cursor: pointer;
+} */
+@keyframes baranimation {
+    from {
+		transform: translate3d(0, -10rem, 0)
+    }
+    to {
+		transform: translate3d(0, 0, 0)
+    }
+}
+@keyframes linkanimation {
+    from {
+		transform: translate3d(0, 30px, 0);
+        opacity: 0 
+    }
+    to {
+		transform: translate3d(0, 0, 0);
+         opacity: 1
+    }
+}
+@media screen and (max-width: 1006px){
+
+	.hideSmall{
+		display: none;
+	}
+  .togglebtn{
+    display: none;
+  }
+  .toggleViewSmall{
+    display: block;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+  }
+  .NavProfileHeader{
+    display: block;
+  }
+  #NavProfile{
+    display: block;
+  }
+  .fa-caret-down-name{
+    display: inline;
+  }
+
+}
+/* .heart-rate {
+  position: relative;
+  transform: translateY(30px);
+  display: inline;
+  width: 100px;
+  height: 30px;
+  position: relative;
+  margin: 20px auto;
+}
+.fade-in {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #3AAFA9;
+  top: 0;
+  right: 0;
+  animation: heartRateIn 2.5s linear infinite;
+}
+
+.fade-out {
+  position: absolute;
+  width: 120%;
+  height: 100%;
+  top: 0;
+  left: -120%;
+  animation: heartRateOut 2.5s linear infinite;
+  background: rgba(58, 175, 169, 1);
+  background: -moz-linear-gradient(left, rgba(58, 175, 169, 1) 0%, rgba(58, 175, 169, 1) 50%, rgba(58, 175, 169, 0) 100%);
+  background: -webkit-linear-gradient(left, rgba(58, 175, 169, 1) 0%, rgba(58, 175, 169, 1) 50%, rgba(58, 175, 169, 0) 100%);
+  background: -o-linear-gradient(left, rgba(58, 175, 169, 1) 0%, rgba(58, 175, 169, 1) 50%, rgba(58, 175, 169, 0) 100%);
+  background: -ms-linear-gradient(left, rgba(58, 175, 169, 1) 0%, rgba(58, 175, 169, 1) 50%, rgba(58, 175, 169, 0) 100%);
+  background: linear-gradient(to right, rgba(58, 175, 169, 1) 0%, rgba(58, 175, 169, 1) 80%, rgba(58, 175, 169, 0) 100%);
+}
+
+@keyframes heartRateIn {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes heartRateOut {
+  0% {
+    left: -120%;
+  }
+  30% {
+    left: -120%;
+  }
+  100% {
+    left: 0;
+  }
+} */

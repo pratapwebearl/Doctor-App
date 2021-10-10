@@ -1,0 +1,349 @@
+.dashboardComponentViewProfile{
+    padding : 0 ;
+    margin: 0;
+    box-sizing: border-box ;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* background-color : blue; */
+    right: 0;
+    min-height : calc(100vh - 5rem);
+    height: fit-content;
+    width: calc(100vw - 270px);
+    position: absolute;
+    top:5rem;
+    z-index: -1;
+    /* border : 10px solid black */
+    background: #DEF2F1;
+}
+.profile-container{
+    margin: 5vh 10vw 5vh 10vw;
+    background-color: white;
+    width: auto;
+    position: relative;
+}
+
+.profile-title{
+    font-weight: bold;
+    color: #17252A;
+    padding: 1rem;
+    background-color: #8CD9D5;
+    font-size: 1.4rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid #2B7A79;
+}
+.fa-user-circle-profile{
+    margin-right: 1rem;
+}
+.profileinfo{
+    padding: 1vh 3vw 3.5vh 3vw;
+}
+/* .profile-img-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.profile-img-holder{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+.profileimg{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#profileImg{
+    display: none;
+}
+.btnUploadImage{
+    width: 200px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.profileImgUpload{
+    margin: auto;
+    width: 200px;
+    background: #cccccc;
+    font-size: 0.9em;
+    border-radius: 3px;
+    padding: 0.6em;
+    cursor: pointer;
+    color: #17252A;
+}
+.fa-upload-profileImg{
+    margin:0 .7rem;
+}
+
+
+@media screen and (max-width:1100px){
+    .dashboardComponentViewProfile{
+        box-sizing: border-box ;
+        /* background-color : blue; */
+        min-height : calc(100vh - 5rem);
+        height: fit-content;
+        width: calc(100vw - 70px);
+        position: absolute;
+        top:5rem;
+        /* border : 10px solid black */
+    }
+}
+.rowProfile{
+    width: 100%;
+    margin-bottom: 3vh;
+}
+.colProfile{
+    width: 50%;
+    display: inline-block;
+}
+.flotright{
+    float: right;
+}
+.inputProfile{
+    color: #17252A;
+    width: 330px;
+    /* margin-left: 1vw; */
+    padding: 0.6em;
+    font-size: 0.9em;
+    outline: none;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+.profilelabel{
+    font-weight: 600;
+    margin-bottom: 1vh;
+    /* padding: 10px 0; */
+    display: block;
+}
+.profilelabelMain{
+    border-left: 5px solid #2B7A79;
+    font-weight: 600;
+    margin: 2.5vh 0;
+    /* padding: 10px 0; */
+    display: block;
+    font-size: 1.2rem;
+}
+.profilelabelMainContent{
+    margin-left: 10px;
+}
+.profileFielddivide{
+    border-top: 1px solid #dddddd;
+    /* height: 1px; */
+    margin: 2rem 0;
+}
+/* .reactPhoneInputProfile{
+    color: #17252A;
+    width: 330px;
+    padding: 0.6em;
+    font-size: 0.9em;
+    outline: none;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    background: #f9f9f9;
+} */
+.css-2b097c-container {
+    width: 330px;
+}
+.css-yk16xz-control {
+    background: #f9f9f9;
+    border: 1px solid #dddddd;
+    width: 330px;
+}
+
+.css-tlfecz-indicatorContainer {
+    background: #f9f9f9;
+}
+.css-g1d714-ValueContainer {
+    background: #f9f9f9;
+}
+.react-tel-input .form-control {
+    color: #17252A;
+    position: relative;
+    width: 330px;
+    font-size: 0.9em;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    background: #f9f9f9;
+}
+.togglePasswordProfile {
+    color: #808080;
+    cursor: pointer;
+    /* transform: translateY(-10px); */
+    transform: translateX(-30px);
+    /* margin-left: 295px;
+    position: relative; */
+}
+.sbtnProfile{
+	width: 125px;
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+	background-image: linear-gradient(to right, #3AAFA9, #3AAFA9, #2B7A79);
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #FEFFFF;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+.sbtnProfileDisable{
+	width: 125px;
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+	background: #cccccc;
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #FEFFFF;
+	margin: 1rem 0;
+	cursor: not-allowed;
+	transition: .5s;
+}
+
+.sbtnPrifile:hover{
+	background-position: right;
+}
+.marginBottom{
+    margin-bottom: 0; 
+}
+.documentName{
+    font-size: .85rem;
+    color: #808080;
+    margin-top: .8vh;
+}
+.errorMessage {
+    font-size: .9em;
+    color: red;
+    position: relative;
+    /* width: 330px; */
+    display: table;
+}
+.overLayTitleSuccessProfile{
+    text-align: center;
+	font-size: 1.3rem;
+	font-weight: bold;
+	color:#17252A;
+}
+/* .lineFiled{
+    color: #808080 ;
+    fill:red;
+    background-color: red;
+} */
+.documentuploadField{
+    border: 1px solid #BEBEBE;
+    border-radius: 5px;
+    padding: 10px;
+}
+.searchBox { 
+	border: 5px solid red;
+	font-size: 1rem;
+	/* min-height: 50px; */
+  }
+.chip{ 
+	background-color: #2B7A79;
+  }
+.optionListContainer  {
+    /* display: none; */
+    /* overflow:scroll; */
+    overflow:hidden;
+    max-height: 133px;
+    /* margin-bottom: 1rem; */
+    border:1px solid black
+}
+.marginBottomTimeslot{
+    margin-bottom: 3vh;
+}
+.hospitalImagesView{
+    margin: 5vh 5vw;
+}
+
+
+@media screen and (max-width:1274px){
+    .rowProfile{
+        margin-bottom:0;
+    }
+    .colProfile{
+        width: 100%;
+        /* display: inline-block; */
+        margin-bottom: 2vh;
+    }
+    .rowProfile{
+        height: fit-content;
+    }
+    .marginBottomTimeslot{
+        margin-bottom: 2.5vh;
+    }
+    
+}
+
+@media screen and (max-width:550px){
+    .colProfile{
+        width: 100%;
+        /* display: inline-block; */
+    }
+    .rowProfile{
+        height: fit-content;
+    }
+    .inputProfile{
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    .react-tel-input .form-control {
+        width: 100%;
+    }
+    .css-2b097c-container {
+        width: 100%;
+    }
+    .css-yk16xz-control {
+        width: 100%;
+    }
+    .togglePasswordProfile {
+        /* left: 100%; */
+        transform: translate(50vw, -25px);
+    }
+    .marginBottomTimeslot{
+        margin-bottom: 2.5vh;
+    }
+    
+}
+@media screen and (max-width:432px){
+
+    .inputProfile{
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .react-tel-input .form-control {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .css-2b097c-container {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .css-yk16xz-control {
+        width: 100%;
+    }
+    .btnUploadImage{
+        width: 180px;
+    }
+    .profileImgUpload{
+        font-size: 0.8rem;
+        width: 100%;
+    }
+    .marginBottomTimeslot{
+        margin-bottom: 2.5vh;
+    }
+    
+}
+@media screen and (max-width:391px){
+
+    .togglePasswordProfile {
+        transform: translateX(-25px);
+        position: absolute;
+    }
+}

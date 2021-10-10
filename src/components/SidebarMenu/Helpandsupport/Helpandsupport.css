@@ -1,0 +1,68 @@
+.help-container{
+    margin: 5vh 10vw 5vh 10vw;
+    background-color: white;
+    width: auto;
+    /* height: 50vh; */
+    position: relative;
+}
+.help-ques{
+    padding : 1vh 3vw 0vh 3vw;
+}
+.dashboardComponentViewFeed{
+    padding : 0 ;
+    margin: 0;
+    box-sizing: border-box ;
+    right: 0;
+    min-height : calc(100vh - 5rem);
+    height: fit-content;
+    width: calc(100vw - 270px);
+    position: absolute;
+    top:5rem;
+    z-index: -1;
+    /* border : 10px solid black */
+    background: #DEF2F1;
+}
+.help-title h4{
+    font-weight: bold;
+    color: #17252A;
+    background-color: #8CD9D5;
+    font-size: 1.4rem;
+    padding: 1rem;
+    text-align: left;
+    border-left: 5px solid #2B7A79;
+    margin-bottom: 1rem;
+}
+.fa-question-circle{
+    margin-right: 1rem;
+}
+.faqFooter{
+    margin-top: 4vh;
+    background-color: #8CD9D5;
+    padding: 1vh;
+    color: #2B7A79;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+.faqPhoneNo{
+    text-decoration: none;
+    color: #17252A;
+}
+.fa-phone-faq{
+    transform: rotate(10deg);
+}
+.fa-envelope-faq{
+    margin-right: 5px;
+}
+@media screen and (max-width:1100px){
+    .dashboardComponentViewFeed{
+        box-sizing: border-box ;
+        /* background-color : blue; */
+        min-height : calc(100vh - 5rem);
+        height: fit-content;
+        width: calc(100vw - 70px);
+        position: absolute;
+        top:5rem;
+        /* border : 10px solid black */
+    }
+}

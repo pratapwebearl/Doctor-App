@@ -1,0 +1,133 @@
+.feedbackComponentViewProfile{
+    padding : 0 ;
+    margin: 0;
+    box-sizing: border-box ;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* background-color : blue; */
+    right: 0;
+    min-height : calc(100vh - 5rem);
+    height: fit-content;
+    width: calc(100vw - 270px);
+    position: absolute;
+    top:5rem;
+    z-index: -1;
+    /* border : 10px solid black */
+    background: #DEF2F1;
+}
+.feedback-container{
+    margin: 5vh 10vw 5vh 10vw;
+    background-color: white;
+    width: auto;
+    position: relative;
+}
+
+.feedback-title{
+    font-weight: bold;
+    color: #17252A;
+    padding: 1rem;
+    background-color: #8CD9D5;
+    font-size: 1.4rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid #2B7A79;
+}
+.fa-user-circle-profile{
+    margin-right: 1rem;
+}
+
+.feedbackinfo{
+    padding: 1vh 3vw 3.5vh 3vw;
+
+}
+.p-feedback{
+    color: #17252A;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-bottom: 20px;
+}
+.starRatingDiv{
+    margin-bottom:1rem;
+}
+.starRatingDivSmall{
+    margin-bottom:1rem;
+    display: none;
+}
+.fa-star-half-alt-feedback{
+    margin-right: 1rem;
+}
+
+/* @media screen and (max-width:550px){
+    .widget-svg{
+        width:10px;
+        height: 10px;
+        fill:wheat
+    }
+} */
+
+@media screen and (max-width:550px){
+    .starRatingDiv{
+        margin-bottom:1rem;
+          display: none;
+    }
+    .starRatingDivSmall{
+        margin-bottom:1rem;
+        display: block;
+    }
+}
+@media screen and (max-width:432px){
+    .p-feedback{
+        font-size: .9rem;
+    }
+    .textareaFeedback{
+        font-size: .9rem;
+    }
+}
+.btnSendFeedbackEnable{
+
+    width: 125px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(to right, #3AAFA9, #3AAFA9, #2B7A79);
+    background-size: 200%;
+    font-size: 1.1rem;
+    color: #FEFFFF;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.btnSendFeedbackDisable{
+
+    width: 125px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background: #cccccc;
+    background-size: 200%;
+    font-size: 1.1rem;
+    color: #FEFFFF;
+    margin: 1rem 0;
+    cursor: not-allowed;
+    transition: .5s;
+
+}
+.textareaFeedback{
+    font-size: 1rem;
+}
+
+@media screen and (max-width:1100px){
+    .feedbackComponentViewProfile{
+        box-sizing: border-box ;
+        /* background-color : blue; */
+        min-height : calc(100vh - 5rem);
+        height: fit-content;
+        width: calc(100vw - 70px);
+        position: absolute;
+        top:5rem;
+        /* border : 10px solid black */
+    }
+}

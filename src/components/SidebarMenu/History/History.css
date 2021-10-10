@@ -1,0 +1,297 @@
+.appointmentHistoryComponentViewProfile{
+    padding : 0 ;
+    margin: 0;
+    box-sizing: border-box ;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* background-color : blue; */
+    right: 0;
+    min-height : calc(100vh - 5rem);
+    height: fit-content;
+    width: calc(100vw - 270px);
+    position: absolute;
+    top:5rem;
+    z-index: -1;
+    /* border : 10px solid black */
+    background: #DEF2F1;
+}
+.appointmentHistory-container{
+    margin: 5vh 10vw 5vh 10vw;
+    background-color: white;
+    width: auto;
+    position: relative;
+}
+
+.appointmentHistory-title{
+    font-weight: bold;
+    color: #17252A;
+    padding: 1rem;
+    background-color: #8CD9D5;
+    font-size: 1.4rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid #2B7A79;
+}
+.fa-history-appointment{
+    margin-right: 1rem;
+}
+.appointmentHistoryinfo{
+    padding: 1vh 3vw 3.5vh 3vw;
+}
+.card-main{
+   width:100%;
+   min-height:7vh;
+   background: #f9f9f9;
+   border: 1px solid #dddddd;
+   border-radius: 4px;
+   margin: 1rem 0;
+   color: #17252A;
+   font-size: 1rem;
+   display: flex;
+   align-items: center;
+}
+.card-main-model-history{
+    width:100%;
+    min-height:7vh;
+    margin: 1rem 0;
+    color: #17252A;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+ }
+.h-name-div{
+    min-width: 18%;
+}
+.h-name {
+    margin-left:1rem;
+    font-weight: 600;
+    display: inline-block;
+}
+.h-name-model {
+    font-weight: 600;
+    display: inline-block;
+}
+.h-age,.h-gender,.h-appointment-time,.h-description,.h-counsulting-date,.h-counsulting-time,.h-appointment-review{
+    font-weight: 600;
+    display: inline-block;
+}
+.h-appointment-type-div{
+    min-width: 14%;
+}
+.h-div-model{
+    max-width: 100%;
+}
+.h-div-model-review{
+    margin:0 3vw;
+    max-width: 100%;
+}
+.h-appointment-type{
+    font-weight: 600;
+    display: inline-block;
+}
+.h-appointment-date-div{
+    min-width: 15%;
+}
+.h-appointment-date{
+    font-weight: 600;
+    display: inline-block;
+}
+/* .h-appointment-time-div{
+    min-width: 15%;
+}
+.h-appointment-time{
+    font-weight: 600;
+    display: inline-block;
+} */
+
+
+.h-disease-div{
+    min-width: 18%;
+}
+.h-disease{
+    font-weight: 600;
+    display: inline-block;
+}
+.h-status-accepted-div{
+    min-width: 15%;
+}
+.h-status-accepted{
+    font-weight: 600;
+   font-style:oblique;
+    color: #2B7A79;
+    display: inline-block;
+}
+.h-status-rejected{
+    font-weight: 600;
+    font-style:oblique;
+    color: #e42b2b;
+    display: inline-block;
+}
+.h-star-div{
+    min-width: 20%;
+}
+.h-star{
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* .h-reviewmsg-div{
+    min-width: 27%;
+}
+.h-reviewmsg{
+    font-weight: 600;
+    display: inline-block;
+} */
+
+.viewBtnHistory{
+    min-width:90%;
+}
+.button-grey-history{
+    width: 100%;;
+    display: inline-block;
+	height: 100%;
+    padding: 10px;
+	border-radius: 10px;
+	border: none;
+    background-image: linear-gradient(to right, #888888,#888888, #888888);
+	background-size: 200%;
+	font-size: 1rem;
+	color: #FEFFFF;
+	/* margin: 1rem 0; */
+	cursor: pointer;
+}
+.small-size-row-first-history{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.small-size-row-first-history-model{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.small-size-row-second-history{
+    width: 10%;
+    display: flex;
+    align-items: flex-start;
+    margin: 1rem 0;
+}
+.noHistorySvgDiv{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 3vh;
+    flex-direction: column;
+}
+.noHistorySvg{
+    max-width: 700px;
+    max-height: 500px;
+}
+.svgLabel{
+    color: #808080;
+    transform: translateY(-30px);
+    margin-bottom: 1.5rem;
+}
+@media screen and (max-width:1626px){
+    .small-size-row-first-history{
+        width: 70%;
+        flex-wrap: wrap;
+        gap: 12px;
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+    .small-size-row-second-history{
+        width: 30%;
+    }
+    .viewBtnHistory{
+        min-width:50%;
+    }
+}
+@media screen and (max-width:1100px){
+    .appointmentHistoryComponentViewProfile{
+        box-sizing: border-box ;
+        /* background-color : blue; */
+        min-height : calc(100vh - 5rem);
+        height: fit-content;
+        width: calc(100vw - 70px);
+        position: absolute;
+        top:5rem;
+        /* border : 10px solid black */
+    }
+    .noHistorySvg{
+        width: 100%;
+        height: 100%;
+    }
+    .svgLabel{
+        color: #808080;
+        transform: translateY(0);
+        margin-bottom: 1.5rem;
+    }
+}
+@media screen and (max-width:900px){
+    .small-size-row-first-history{
+        flex-wrap: wrap;
+        gap: 12px;
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+    .small-size-row-second-history{
+        flex-wrap: wrap;
+        gap: 12px;
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+    .button-grey-history{
+         width:80px;
+         padding: 10px;
+     }
+     .small-size-row-second-history{
+        align-items: flex-start;
+    }
+     
+}
+@media screen and (max-width:503px){
+    .small-size-row-first-history{
+        align-items: flex-start;
+        padding-left: 8px;
+    }
+    .h-name {
+        margin-left:0;
+    }
+    .button-grey-history{
+         width:65px;
+         padding: 8px;
+     }
+}
+.starRatingDivSmallHistory{
+    display: none;
+}
+@media screen and (max-width:436px){
+    .starRatingDivHistory{
+          display: none;
+    }
+    .starRatingDivSmallHistory{
+        display: block;
+    }
+}
+@media screen and (max-width:407px){
+
+     .card-main{
+        font-size: .9rem;
+     }
+     .button-grey-history{
+        font-size: .9rem;
+    }
+}
+
